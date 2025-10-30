@@ -1,9 +1,17 @@
-# XiaoMi-R4A-Gigabit-v2-Immortalwrt
-带最新UA2F和wget的Immortalwrt固件（针对v2版本）
-···
-## 使用Breed刷入步骤
-**Breed不为R4A定制的，所以不能使用Breed的网页刷入，会无限重启**
-* 参考链接：https://www.right.com.cn/forum/thread-8298740-1-1.html
+# XiaoMi-R4A-Gigabit-v2-ImmortalWrt        
+针对校园网多设备检测的ImmortalWrt
+内置插件包含：
+- UA2F
+- wget-nossl
+- wget-ssl
+- argon-theme
+- argon-config
+默认WebUI地址：192.168.1.1
+默认用户名：root
+无默认密码
+## 刷入步骤（使用Breed）
+**因为Breed不是为R4A定制的，所以不能使用Breed的网页刷入，会无限重启，因此需要手动刷入**
+* 教程参考链接：https://www.right.com.cn/forum/thread-8298740-1-1.html
 
 1.使用HFS架设web服务
 2.在telnet中输入命令wget http://虚拟服务器ip/immortalwrt-ramips-mt7621-xiaomi_mi-router-4a-gigabit-v2-squashfs-sysupgrade.bin，将固件上传到路由器中
@@ -17,3 +25,5 @@ Saving to address 0x80001000
 ```
 
 其中的十六进制地址
+
+3.
